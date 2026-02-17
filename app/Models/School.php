@@ -13,7 +13,7 @@ class School extends Model
     public function students()
     {
         return $this->hasManyThrough(
-            Student::class, // Target model
+            Student::class, // Target model1112
             ClassModal::class, // intermediate model
             'school_id', // Intermediate foreign key
             'class_id', // Target model foreign key
